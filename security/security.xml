@@ -1,0 +1,7 @@
+<!-- <odo>
+
+    <record id="model_acces_todo" model="in.acces.model"
+        <field name="name">mode.access.todo</field>
+        <field name="model_id" ref="PROJECT ODOO.model_wb_todoo"/>
+    </record>
+    </odoo> -->

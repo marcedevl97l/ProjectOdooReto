@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Menu principal y submenu de school_student-->
+        <menuitem id="menu_student" name="School Management" />
+        <menuitem id="menu_school_student" name="Students" parent="menu_student" action="school_student_action" sequence="2"/>
+
+        <!-- Menu principal y submenu de school_subject-->
+        <menuitem id="menu_subject" name="School Management" />
+        <menuitem id="menu_school_subject" name="Subjects" parent="menu_subject" action="school_subject_action" sequence="2"/>
+
+        <!-- Menu principal y submenu de school_teacher-->
+    <menuitem id="main_school_menu" name="School" />
+    <menuitem id="teacher_submenu" name="Teachers" parent="main_school_menu" action="teacher_action" sequence="2"/>
+
+    </data>
+</odoo>

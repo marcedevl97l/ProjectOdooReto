@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+    <record id="school_subject_form_view" model="ir.ui.view" >
+      <field name="name">school.subject.form</field>
+      <field name="model">school.subject</field>
+      <field name="arch" type="xml">
+        <form string="School Subject">
+          <sheet>
+            <group>
+              <field name="subject_name"/>
+              <field name="credits"/>
+              <field name="max_students"/>
+              <field name="active"/>
+              <field name="teacher_id"/>
+              <field name="student_ids" widget="many2many_tags"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record id="school_subject_action" model="ir.actions.act_window" >
+      <field name="name">School Subjects</field>
+      <field name="res_model">school.subject</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="school_subject_form_view"/>
+    </record>
+  </data>
+</odoo>
